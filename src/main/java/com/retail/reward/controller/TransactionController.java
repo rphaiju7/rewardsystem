@@ -18,7 +18,7 @@ public class TransactionController {
 	@Autowired
 	TransactionService transactionServiceImpl;
 	
-	@GetMapping(value = "/transaction")
+	@GetMapping(value = "/transactions")
 	public ResponseEntity<List<TransactionModel>> createTransaction() throws IOException {
 		return ResponseEntity.ok(transactionServiceImpl.getAllTransactions());
 
